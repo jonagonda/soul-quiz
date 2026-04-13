@@ -221,6 +221,15 @@ export default function Home() {
           {stage === STAGES.INTRO && (
             <div className="fade-in-up" key="intro">
               <div className="card">
+                {/* Hero image */}
+                <div className="hero-image-wrapper">
+                  <img
+                    src="/hero.png"
+                    alt="What Is Your Soul's Energy Type?"
+                    className="hero-image"
+                  />
+                </div>
+
                 <div className="intro-hero">
                   <div className="intro-badge">David Gandelman · Meditation School</div>
                   <h1 className="intro-title">
@@ -487,7 +496,7 @@ export default function Home() {
                 <div className="cta-block">
                   <p>{topResults[0].result.cta}</p>
                   <a
-                    href="https://meditationschool.com"
+                    href="https://www.meditationschool.us/"
                     target="_blank"
                     rel="noopener noreferrer"
                     className="btn-primary"
